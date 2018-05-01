@@ -1,0 +1,72 @@
+body {
+  background: #eee;
+}
+
+.app-header,
+footer {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  padding: 0.5em;
+}
+
+.app-body {  
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 1em 0.5em; 
+}
+
+.card {
+  background: white;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 10px black;
+}
+
+.picture {
+  text-align: center;
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+.timeline {
+  margin-top: 2em;
+}
+
+img {
+  display: block;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+  margin-top: 0.5em;
+  background: white;
+}
+
+li {
+  padding: 0.5em;
+}
+
+li:nth-child(even) {
+  background: #ddd;
+}
+
+.quote {
+  max-width: 30em;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0 1em;
+}
+
+.link {
+  margin-top: 2em;
+}
