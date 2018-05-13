@@ -1,8 +1,13 @@
 body {
   background: #eee;
 }
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
 
-.app-header,
+header,
 footer {
   background-color: #222;
   padding: 20px;
@@ -14,59 +19,56 @@ footer {
   padding: 0.5em;
 }
 
-.app-body {  
+main {
   max-width: 60em;
   margin: 0 auto;
-  padding: 1em 0.5em; 
+  padding: 2em;
 }
 
-.card {
+.Card {
   background: white;
-  padding: 0.5em;
-  border-radius: 0.25em;
-  box-shadow: 0 0 10px black;
+  padding: 1.1em;
+  box-shadow: 3px 3px 20px black;
+  margin-bottom: 2em;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.picture {
+.Entry {
+  border: 1px solid grey;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.Entry-date {
+  background: grey;
+  color: white;
+  border-bottom: 1px solid grey;
+  padding: 0.25em 0;
   text-align: center;
-  max-width: 25em;
-  margin: 0 auto;
 }
 
-.timeline {
-  margin-top: 2em;
-}
-
-img {
-  display: block;
-}
-
-h3 {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0 !important;
-  margin-top: 0.5em;
-  background: white;
-}
-
-li {
+.Entry-event {
   padding: 0.5em;
 }
 
-li:nth-child(even) {
-  background: #ddd;
-}
+@media(min-width: 600px) {
+  .Entry {
+    flex-direction: row;
+    align-items: stretch;
+  }
 
-.quote {
-  max-width: 30em;
-  margin: 0 auto;
-  margin-top: 2em;
-  padding: 0 1em;
-}
+  .Entry-date {
+    background: white;
+    color: black;
+    min-width: 150px;
+    border: none;
+    margin: auto 0;
+  }
 
-.link {
-  margin-top: 2em;
+  .Entry-event {
+    border-left: 1px solid grey;
+  }
 }
